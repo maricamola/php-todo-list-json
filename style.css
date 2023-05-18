@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #001632;
+}
+
+h2 {
+  color: red;
+}
+
+h1 {
+  margin-bottom: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  margin: 0;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.logo {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.input-area {
+  text-align: center;
+}
+
+.input-area input,
+.input-area button {
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.input-area input {
+  width: 300px;
+  margin-right: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #f5f7f7;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 60px;
+  list-style: none;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.todo-list li:hover {
+  background-color: white;
+}
+
+.todo-list li i {
+  color: gray;
+}
+
+.todo-list li i:hover {
+  color: red;
+}
+
+/*Creo classe "done" per sbarrare le tasks svolte*/
+
+.todo-list li.done span {
+  text-decoration: line-through;
+}
