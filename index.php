@@ -31,13 +31,32 @@
       <img src="img/logo.png" alt="logo Boolean">
     </div>
   </header>
+
+
   <div id="app">
     <div class="container my-4">
       <h1>To do list</h1>
+
       <ul class="list-group">
-        <li v-for="(listItem, index) in list" :key="index" class="list-group-item">{{ listItem }}</li>
+        <li v-for="(listItem, index) in list" :key="index"
+          class="list-group-item d-flex justify-content-between align-items-center"><span>
+            {{ listItem }}</span>
+          <i class="fa-regular fa-trash-can"></i>
+        </li>
       </ul>
+
+      <div class="input-area">
+        <input v-model.trim="newTask" @keyup.enter="addTask" type="text" placeholder="Nuovo compito da svolgere">
+
+        <button @click="addTask" id="button-add" type="button">Aggiungi</button>
+
+        <!-- <div>
+        <span class="error">{{errorMessage}}</span>
+      </div> -->
+
+      </div>
     </div>
+
   </div>
 
 

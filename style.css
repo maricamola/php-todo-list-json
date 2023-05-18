@@ -36,11 +36,13 @@ header {
 
 .input-area {
   text-align: center;
+  padding-top: 30px;
 }
 
 .input-area input,
 .input-area button {
   padding: 8px 15px;
+  border: 1px solid;
   border-radius: 10px;
 }
 
@@ -54,7 +56,7 @@ button {
 }
 
 .container {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   padding: 30px;
   border-radius: 10px;
