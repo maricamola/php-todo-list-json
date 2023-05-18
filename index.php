@@ -35,19 +35,14 @@
     <div class="container my-4">
       <h1>To do list</h1>
       <ul class="list-group">
-        <li class="list-group-item">Fare</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
+        <li v-for="(listItem, index) in list" :key="index" class="list-group-item">{{ listItem }}</li>
       </ul>
     </div>
-    </main>
   </div>
-  <main>
 
 
-    <script src="main.js"></script>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

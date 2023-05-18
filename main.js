@@ -4,14 +4,16 @@ createApp({
 
   data() {
     return {
-      apiUrl: 'server.php'
+      apiUrl: 'server.php',
+      list: [],
     }
   },
   methods: {
     viewList() {
       axios.get(this.apiUrl)
         .then(result => {
-          console.log(result.data);
+          this.list = result.data;
+          console.log(this.list);
         })
     }
   },

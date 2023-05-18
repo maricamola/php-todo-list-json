@@ -7,7 +7,11 @@ Deve essere anche gestita la persistenza dei dati leggendoli da, e scrivendoli i
 
 ## Workflow
 - Importo in index.php le cnd di tutti i componenti che utilizzerò;
-
+- Creo un file json
+- Aggiungo un file server.php da cui andrò a leggere i date del json
+- Genero chiamata API , controllo che l'array sia leggibile 
+- Se tutto funziona, stampo in pagina il mio array con un v-for
+-
 
 ## Use
 - PHP
