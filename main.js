@@ -18,6 +18,7 @@ createApp({
         })
     },
     addTask() {
+      //Il metodo "addTask" viene eseguito quando un utente aggiunge una nuova attività nella lista. Quando l'utente aggiunge una nuova attività, viene creato un oggetto FormData che contiene i dati inseriti dall'utente
       const data = new FormData();
       data.append('todoItem', this.newTask);
 
@@ -29,18 +30,19 @@ createApp({
           console.log('aggiungo', this.list);
         })
 
-
-
     },
     deleteTask(index) {
       console.log(index);
-      const data = new FormData();
-      data.append('indexToDelete', index);
-      axios.post(this.apiUrl, data)
-        .then(result => {
-          this.list = result.data;
-          console.log('elimino', this.list);
-        })
+      //controllo per evitare che la task venga eliminato
+      if (confirm('Vuoi davvero eliminare questo elemento?')) {
+        const data = new FormData();
+        data.append('indexToDelete', index);
+        axios.post(this.apiUrl, data)
+          .then(result => {
+            this.list = result.data;
+            console.log('elimino', this.list);
+          })
+      }
     }
   },
   mounted() {

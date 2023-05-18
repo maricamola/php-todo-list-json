@@ -11,7 +11,9 @@ Deve essere anche gestita la persistenza dei dati leggendoli da, e scrivendoli i
 - Aggiungo un file server.php da cui andrò a leggere i date del json
 - Genero chiamata API , controllo che l'array sia leggibile 
 - Se tutto funziona, stampo in pagina il mio array con un v-for
--
+- Attivo al click il bottone per aggiungere in pagina la nuova tasks
+- Aggiungo il click al bottone per eliminare gli elementi
+- Uso array_splice per tagliare la mia array e quindi cancellare l'elemento selezionata.
 
 ## Use
 - PHP

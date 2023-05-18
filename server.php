@@ -13,20 +13,19 @@ if (isset($_POST['todoItem'])) {
 }
 
 
-
 //Quando ricevo indexToDelete, elimino
 if (isset($_POST['indexToDelete'])) {
   $index = $_POST['indexToDelete'];
   array_splice($list, $index, 1);
+  filePut($list);
 }
 
 
 //funzione
 function filePut($list)
 {
-  file_put_contents('todo-list-json', json_encode($list));
+  file_put_contents('todo-list.json', json_encode($list));
 }
-
 
 
 header('Content type: application/json');

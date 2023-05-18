@@ -1,5 +1,26 @@
 [
-  "Andare in palestra alle 18.30",
-  "Stirare gli abiti per la festa",
-  "Leggere almeno 20 pagine del libro"
+  {
+    "text": "Andare in palestra alle 6:00",
+    "done": false
+  },
+  {
+    "text": "Andare a mare prima delle 11:00",
+    "done": false
+  },
+  {
+    "text": "Leggere 50 pagina di un libro",
+    "done": false
+  },
+  {
+    "text": "Buttarsi col paracadute ore 15:00",
+    "done": false
+  },
+  {
+    "text": "Raccogliere le uova delle galline 17:00",
+    "done": false
+  },
+  {
+    "text": "Lezione di scacchi alle 19:00",
+    "done": false
+  }
 ]
