@@ -32,7 +32,16 @@ createApp({
 
 
     },
-    deleteTask(index)
+    deleteTask(index) {
+      console.log(index);
+      const data = new FormData();
+      data.append('indexToDelete', index);
+      axios.post(this.apiUrl, data)
+        .then(result => {
+          this.list = result.data;
+          console.log('elimino', this.list);
+        })
+    }
   },
   mounted() {
     this.viewList();

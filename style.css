@@ -79,11 +79,11 @@ button {
   background-color: white;
 }
 
-.todo-list li i {
+.fa-regular {
   color: gray;
 }
 
-.todo-list li i:hover {
+.fa-regular:hover {
   color: red;
 }
 
