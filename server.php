@@ -8,7 +8,11 @@ $list = json_decode($json_string);
 
 //Quando axios invia in POST todoItem, lo pusho nell'array
 if (isset($_POST['todoItem'])) {
-  $list[] = $_POST['todoItem'];
+  $newTask = [
+    "text" => $_POST['todoItem'],
+    "done" => false
+  ];
+  $list[] = $newTask;
   filePut($list);
 }
 

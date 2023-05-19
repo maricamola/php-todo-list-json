@@ -39,7 +39,8 @@
 
       <ul class="list-group">
         <li v-for="(listItem, index) in list" :key="index"
-          class="list-group-item d-flex justify-content-between align-items-center"><span>
+          class="list-group-item d-flex justify-content-between align-items-center"
+          :class="{ 'text-decoration-line-through' : listItem.done }"><span>
             {{ listItem.text }}</span>
           <span @click.stop="deleteTask(index)" class="danger"><i class="fa-regular fa-trash-can"></i>
           </span>

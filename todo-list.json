@@ -1,11 +1,7 @@
 [
   {
-    "text": "Andare in palestra alle 6:00",
-    "done": false
-  },
-  {
     "text": "Andare a mare prima delle 11:00",
-    "done": false
+    "done": true
   },
   {
     "text": "Leggere 50 pagina di un libro",
@@ -13,7 +9,7 @@
   },
   {
     "text": "Buttarsi col paracadute ore 15:00",
-    "done": false
+    "done": true
   },
   {
     "text": "Raccogliere le uova delle galline 17:00",
@@ -21,6 +17,10 @@
   },
   {
     "text": "Lezione di scacchi alle 19:00",
+    "done": false
+  },
+  {
+    "text": "Andare a dormire alle 22.30",
     "done": false
   }
 ]
